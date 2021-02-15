@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="estilo.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<nav class="navbar navbar-expand-lg navbar-light">
+				  <div class="container-fluid">
+				    <a class="navbar-brand" href="#">
+				    	  <img src="https://image.flaticon.com/icons/png/512/1244/1244919.png" alt="" width="30" height="24" class="d-inline-block align-top">
+				    	 Libros
+				   	</a>
+				    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				      <span class="navbar-toggler-icon"></span>
+				    </button>
+				    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				        <li class="nav-item">
+				          <a class="nav-link active" aria-current="page" href="#">Home</a>
+				        </li>
+				        <li class="nav-item">
+				          <a class="nav-link" href="#">Reviews</a>
+				        </li>
+				        <li class="nav-item dropdown">
+				          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				            Géneros
+				          </a>
+				          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+				            <li><a class="dropdown-item" href="#">Acción</a></li>
+				            <li><a class="dropdown-item" href="#">Aventura</a></li>
+				            <li><a class="dropdown-item" href="#">Drama</a></li>
+				            <li><a class="dropdown-item" href="#">Comedia</a></li>
+				            <li><a class="dropdown-item" href="#">Economía</a></li>
+				          </ul>
+				        </li>
+				      </ul>
+				      <form class="d-flex">
+				        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+				        <button class="btn btn-outline-success" type="submit">Buscar</button>
+				      </form>
+				    </div>
+				  </div>
+				</nav>
+			</div>
+		</header>
+	
+		<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+		    <div class="carousel-indicators">
+		      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		    </div>
+		    <div class="carousel-inner">
+		      <div class="carousel-item active">
+		        
+		        <img class="bd-placeholder-img" src="https://integralatampost.s3.amazonaws.com/uploads/article/picture/22858/2020-07-06_11_572020-07-06_08_1920200707_1984-la-obra-cumbre-de-George-Orwell-que-siempre-puede-relacionarse-con-la-actualidad.jpg">
+		        <div class="container">
+		          <div class="carousel-caption text-start">
+		            <h1>Best Seller</h1>
+		            <p>1984 - George Orwell</p>
+		          </div>
+		        </div>
+		      </div>
+		      <div class="carousel-item">
+		        <img class="bd-placeholder-img" src="http://goodereader.com/blog/wp-content/uploads/images/DFH-banner.jpg">
+
+		        <div class="container">
+		          <div class="carousel-caption">
+		            <h1>Recomendación de la semana</h1>
+		            <p>Dune - Frank Herbert</p>
+		          </div>
+		        </div>
+		      </div>
+		      <div class="carousel-item">
+		        <img class="bd-placeholder-img" src="https://s1.eestatic.com/2018/12/15/invertia/invertia_360979897_145246560_1024x576.jpg">
+
+		        <div class="container">
+		          <div class="carousel-caption text-end">
+		            <h1>Biblioteca</h1>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+		      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		      <span class="visually-hidden">Previous</span>
+		    </button>
+		    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+		      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		      <span class="visually-hidden">Next</span>
+		    </button>
+		  </div>
+
+		  <h2 class="mt-4">Recomendador</h2>
+		  <form class="needs-validation" novalidate>
+	          <div class="row g-3">
+
+	          	<div class="col-12">
+	              <label for="genero" class="form-label">Género <span class="text-muted"></span></label>
+	              <input type="genero" class="form-control" id="genero" placeholder="Acción" value="" required>
+	              <div class="alert alert-primary" role="alert">
+					  Debe introducir un género.
+				  </div>
+	            </div>
+
+	            <div class="col-12">
+	              <label for="genero" class="form-label">Autor <span class="text-muted">(Optional)</span></label>
+	              <input type="genero" class="form-control" id="genero" placeholder="Charles Dickens">
+	            </div>
+
+	            <div class="col-md-5">
+	              <label for="country" class="form-label">Precio</label>
+	              <select class="form-select" id="country" required>
+	                <option value="">Seleccionar</option>
+	                <option><10€</option>
+	                <option>10€-15€</option>
+	                <option>15€-20€</option>
+	              </select>
+	              <div class="alert alert-primary" role="alert">
+					  Debe seleccionar un precio.
+				  </div>
+	            </div>
+
+	           <h4 class="mb-3">Formato</h4>
+
+		         <div class="my-3">
+		            <div class="form-check">
+		              <input id="fisico" name="formato" type="radio" class="form-check-input" checked required>
+		              <label class="form-check-label" for="credit">Físico</label>
+		            </div>
+		            <div class="form-check">
+		              <input id="ebook" name="formato" type="radio" class="form-check-input" required>
+		              <label class="form-check-label" for="debit">Ebook</label>
+		            </div>
+		         </div>
+	          </div>
+	          <button class="w-100 btn btn-primary btn-lg" type="submit">Continuar</button>
+			</form>
+
+			<hr class="my-4">
+
+		<div class="row featurette">
+	      <div class="col-md-7">
+	        <h3 class="featurette-heading">1984 - George Orwell</h3>
+	        <p class="margen">1984 (en su versión original en inglés: Nineteen Eighty-Four) es una novela política de ficción distópica, escrita por George Orwell entre 1947 y 1948 y publicada el 8 de junio de 1949. La novela popularizó los conceptos del omnipresente y vigilante Gran Hermano o Hermano Mayor, de la notoria habitación 101, de la ubicua policía del Pensamiento y de la neolengua, adaptación del idioma inglés en la que se reduce y se transforma el léxico con fines represivos, basándose en el principio de que lo que no forma parte de la lengua, no puede ser pensado.</p>
+	        <div class="margen">
+	       		<a class="btn btn-primary" href="https://www.amazon.es/1984-Contempor%C3%A1nea-CONTEMPORANEA-George-Orwell/dp/8499890946" role="button">Comprar ahora</a>
+	        </div>
+	      </div>
+	      <div class="col-md-5">
+	        <img class="imagen-comentario" src="https://images-na.ssl-images-amazon.com/images/I/81HSpSoddtL.jpg">
+	      </div>
+	    </div>
+
+	    <div class="row featurette">
+	      <div class="col-md-7 order-md-2">
+	        <h3 class="featurette-heading">La riqueza de las naciones - Adam Smith</h3>
+	        <p class="margen">Una investigación sobre la naturaleza y causas de la riqueza de las naciones (título original en inglés: An Inquiry into the Nature and Causes of the Wealth of Nations), o sencillamente La riqueza de las naciones, es la obra más célebre de Adam Smith. Publicado en 1776, es considerado el primer libro moderno de economía.
+
+			Smith expone su análisis sobre el origen de la prosperidad de países como Inglaterra o los Países Bajos. Desarrolla teorías económicas sobre la división del trabajo, el mercado, la moneda, la naturaleza de la riqueza, el precio de las mercancías en trabajo, los salarios, los beneficios y la acumulación del capital. Examina diferentes sistemas de economía política, en particular, el mercantilismo y la fisiocracia; asimismo, desarrolla la idea de un orden natural. Este «sistema de libertad natural», como lo llama Smith, es el resultado del libre ejercicio del interés individual que beneficia exitosamente —sin proponérselo— al bien común en la solución de problemas y satisfacción de necesidades por medio de la libre empresa, de la libre competencia y del libre comercio.</p>
+			<div class="margen">
+				<a class="btn btn-primary" href="https://www.amazon.es/riqueza-las-naciones-Ampliada/dp/B08BR7TNDQ/ref=sr_1_1?dchild=1&keywords=La+riqueza+de+las+naciones+Adam+Smith&qid=1613424193&s=books&sr=1-1" role="button">Comprar ahora</a>
+			</div>
+	      </div>
+	      <div class="col-md-5 order-md-1">
+	       <img class="imagen-comentario" src="https://images-na.ssl-images-amazon.com/images/I/61d0ph0ubeL.jpg">
+
+	      </div>
+	    </div>
+
+	    <hr class="my-4">
+		  
+		<h2 class="titulo_tabla">Mejores Autores</h2>
+  		<table id="autores">
+		  <tr>
+		    <th>Nombre</th>
+		    <th>País</th>
+		    <th>Información</th>
+		  </tr>
+		  <tr>
+		    <td>Oscar Wilde</td>
+		    <td>Irlanda</td>
+		    <td><a href="https://es.wikipedia.org/wiki/Oscar_Wilde">Biografía y obras</a></td>
+		  </tr>
+		  <tr>
+		    <td>William Shakespeare</td>
+		    <td>Inglaterra</td>
+		    <td><a href="https://es.wikipedia.org/wiki/William_Shakespeare">Biografía y obras</a></td>
+		  </tr>
+		  <tr>
+		    <td>Charles Dickens</td>
+		    <td>Inglaterra</td>
+		    <td><a href="https://es.wikipedia.org/wiki/Charles_Dickens">Biografía y obras</a></td>
+		  </tr>
+		  <tr>
+		    <td>Miguel de Cervantes</td>
+		    <td>España</td>
+		    <td><a href="https://es.wikipedia.org/wiki/Miguel_de_Cervantes">Biografía y obras</a></td>
+		  </tr>
+		  <tr>
+		    <td>Federico Gracía Lorca</td>
+		    <td>España</td>
+		    <td><a href="https://es.wikipedia.org/wiki/Federico_Garc%C3%ADa_Lorca">Biografía y obras</a></td>
+		  </tr>
+		</table>
+
+
+		<div class="card-footer">
+			<p class="float-end"><a href="#">Volver al inicio</a></p>
+    		Juan Caminos Colmenarejo. 3ºA GITT. Práctica 1
+  		</div>
+	</body>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</html>
